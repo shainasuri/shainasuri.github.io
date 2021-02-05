@@ -1,0 +1,71 @@
+.text {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+.nav{
+    list-style-type: none;
+    border-width:1px 0;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    border-color: white;
+    border: 2rem;
+}
+.nav a{
+    display:inline-block;
+    padding: 2rem;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+img {
+    height: auto;
+    max-width: 50%;
+    padding: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 0;
+    font-size: 16px;
+}
+
+header {
+    font-size: 10rem;
+    font-weight: 300;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    padding-top: 2rem;
+}
