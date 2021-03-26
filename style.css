@@ -1,11 +1,103 @@
-.text {
+:root {
+    --border: 2px solid white;
+    /* fonts */
+    --novecento-narrow: novecento-sans-narrow, sans-serif;
+    --novecento-normal: novecento-sans, sans-serif;
+    --novecento-wide: novecento-sans-wide, sans-serif;
+    --effra: effra, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+html {
+    border: var(--border);
+    height: auto;
+}
+
+html, body {
+    background-color: #161616;
+    color: white;
+    font-size: 16px;
+}
+/* ------------ HEADER & FOOTER ------------ */
+.header {
+    background-color: #161616;
+    border-bottom: var(--border);
+    border: var(--border);
+    display: inline-flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    font-family: var(--novecento-wide);
     font-size: 1rem;
-    font-weight: 100;
+    font-style: normal;
+    font-weight: 200;
     letter-spacing: 0.2rem;
-    line-height: 2rem;
+    left: 0%;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100vw;
+    padding: 2vh;
+    margin: 0; 
+}
+
+.footer {
+    background-color: #161616;
+    border: var(--border);
+    border-top: var(--border);
+    bottom: 0%;
+    display: flex;
+    font-family: var(--novecento-wide);
+    font-size: 0.7rem;
+    flex: 1 1 auto;
+    justify-content: center;
+    left: 0%;
+    letter-spacing: 0.05rem;;
+    overflow: hidden;
+    position: fixed;
+    padding: 1vh 2vh;
+    min-width: 0;
+    margin: 0;  
     text-align: center;
-    padding-bottom: 2rem;
-    
+    width: 100vw;
+}
+
+/* ------------ NAVBAR ------------ */
+.overlay {
+    background-color: rgba(225,225,225, 0.9);
+    height: 100%;
+    left: 0;
+    overflow-x: hidden; 
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 0;
+    z-index: 1; 
+}
+
+.overlay-content {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 35vh;   
+}
+
+.overlay nav {
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #111111;
+    font-weight: 600;
+}
+
+.overlay .closebtn {
+    color: #161616;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    text-decoration: none;
 }
 
 .nav{
@@ -15,57 +107,81 @@
     padding:0;
     text-align:center;
 }
+
 .nav li{
-    display:inline;
+    display:block;
     border-color: white;
     border: 2rem;
 }
+
 .nav a{
-    display:inline-block;
-    padding: 2rem;
-    
-    color: white;
-    text-decoration: none;
+    color: #161616;;
+    display: inline-block;
+    padding: 1rem;
     font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
+    font-style: normal;
+    font-family: var(--novecento-normal);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+}
+
+/* ------------ CONTENT ------------ */
+
+.text-container {
+    border-bottom: var(--border);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 4.5rem;
+    padding-left: 1.1rem; 
+    padding-bottom: 2.5vh;
+}
+
+.project-title {
+    font-size: 2rem;
+    font-family: var(--novecento-wide);
+}
+
+.project-detail {
+    font-size: 1.3rem;
+    font-family: var(--novecento-wide);
+}
+
+.project-description {
+    font-size: 0.8rem;
+    font-family: var(--effra);
+    font-weight: 300;
+    line-height: 1rem;
+    width: 85%;
+    margin-top: 1vh;
 }
 
 img {
-    height: auto;
-    max-width: 50%;
-    padding: 2rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
-}
-
-html, body {
-    background-color: black;
-    color: white;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 0;
-    font-size: 16px;
-}
-
-header {
-    font-size: 10rem;
-    font-weight: 300;
-    letter-spacing: 1rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-h1 {
-    background-color: white;
-    color: black;
-    padding: 2rem;
-    max-width: 50%;
+    border-bottom: var(--border);
+    display: block;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 
-p {
-    padding-top: 2rem;
+img:hover {
+
+}
+
+.explore-text {
+    color: white;
+    font-family: var(--novecento-wide);
+    font-weight: 300;
+    padding: 1.5rem 2rem 1rem;
+    text-align: center;
+}
+
+.logo {
+    width: 10%;
+    padding-bottom: 2rem;
+
 }

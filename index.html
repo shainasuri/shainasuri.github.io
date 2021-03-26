@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaina Suri's Portfolio</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xje5lgt.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-   
+    <script src="script.js" defer></script>
+
 </head>
-<body>
-<header>SHAINA SURI</header>
+<body onload="alertWip()">
+
+    <div class="header">
+        <header>SHAINA SURI</header>
+        <span onclick="openNav()">&#9776;</span>
+    </div>
     
-    <nav><ul class="nav">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="code.html">CODE</a></li>
-        <li><a href="#">GRAPHIC DESIGN</a></li>
-        <li><a href="#">PHOTOGRAPHY</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
-    </ul></nav>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav><ul class="nav">
+                <div class="overlay-content"></div>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="#">PHOTOGRAPHY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul></nav>
+        </div>    
 
-   <a href="https://www.behance.net/shainasuri"><img src="profile.jpg" alt="Shaina Suri"></a>
+        <div class="text-container">
+            <div class="project-title">MANDALAS</div>
+            <div class="project-detail">p5js | 2020</div>
+            <div class="project-description">Mandalas, in South Asian cultures, are considered to be tools of guidance and focus in conjunction with the practice of meditation. A mandala’s circular composition connotes that, “Life is never ending and everything in the universe is connected”. It can put you in a trance-like state and help you connect with yourself in a deeper way. I chose to use this project to create interactive mandalas that the viewer can enjoy, with the colors and movements of their virtual limb around the screen as the mandala expands and contracts, almost imitating our breathing patterns.  I hope they can use this digital interaction as an escape from their daily routine, and find a way to ease their mind and centre themselves whenever they please. </div>
+        </div>
 
-    <h1 class="text">This website is currently a work in progress.</h1>
+        <div class="image">
+            <a href="http://creativecomputation.net/coreinteraction/suri/mandala/index.html"><img src="./images/Shaina_Mandala_Project.png" alt="Link to Project"></a>
+        </div>
 
-    <p class="text">
-       Click on the image to visit my profile on Behance.<br>Stay tuned!
-    </p>
+        <div class="explore">
+            <div class="explore-text">explore more by shaina suri</div>
+            <a href="https://www.behance.net/shainasuri/"><img class="logo" src="./images/behance_logo_white.png"></a>
+        </div>
 
-    <footer class="text">&copy; Copyright 2021 Shaina Suri</footer>
+    <div class="footer"><footer>&copy; copyright shaina suri 2021 </footer></div>
 </body>
 </html>
